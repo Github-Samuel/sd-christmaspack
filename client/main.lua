@@ -226,7 +226,7 @@ CreateThread(function()
         for index, caneData in pairs(GlobalState.CandyCanes) do
             if not caneData.taken then
                 local distance = #(playerCoords - caneData.location)
-                if distance < 5.0 then
+                if distance < 50.0 then
                     if not SpawnedCandyCanes[index] then
                         SpawnCandyCane(index, caneData)
                     end
